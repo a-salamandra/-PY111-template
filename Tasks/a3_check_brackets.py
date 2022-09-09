@@ -6,4 +6,8 @@ def check_brackets(brackets_row: str) -> bool:
     :return: True if valid, False otherwise
     """
 
+    while "()" in brackets_row:
+        brackets_row = brackets_row.replace("()", "")
+    if brackets_row == "":
+        return True
     return False
