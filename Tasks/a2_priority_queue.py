@@ -34,7 +34,7 @@ class PriorityQueue:
         if not self.priority_queue:
             return None
 
-        for key, item in sorted(self.priority_queue.items()):
+        for key, item in self.priority_queue.items():
             if item:
                 return self.priority_queue[key].pop(0)
 
